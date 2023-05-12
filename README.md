@@ -78,6 +78,7 @@
 </ul>
 <h2>Contact Me</h2>
 <p>
-  Faced any problems? Don't hesitate to contact me on lucasnobre037@gmail.com or
-  lucasnobre37@outlook.com
+  Faced any problems? Don't hesitate to contact me on
+  <a href="mailto:lucasnobre037@gmail.com">lucasnobre037@gmail.com</a
+  ><a href="mailto:lucasnobre37@outlook.com">lucasnobre37@outlook.com</a>.
 </p>
