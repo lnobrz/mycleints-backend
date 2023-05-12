@@ -68,16 +68,16 @@
       will return a JSON response with the new credentials.
     </p>
   </li>
-  <h2>Stacks</h2>
-  <p>My Clients Server uses the following stacks:</p>
-  <ul>
-    <li>Typescript</li>
-    <li>NodeJS</li>
-    <li>Express</li>
-  </ul>
-  <h2>Contact Me</h2>
-  <p>
-    Faced any problems? Don't hesitate to contact me on lucasnobre037@gmail.com
-    or lucasnobre37@outlook.com
-  </p>
 </ul>
+<h2>Stacks</h2>
+<p>My Clients Server uses the following stacks:</p>
+<ul>
+  <li>Typescript</li>
+  <li>NodeJS</li>
+  <li>Express</li>
+</ul>
+<h2>Contact Me</h2>
+<p>
+  Faced any problems? Don't hesitate to contact me on lucasnobre037@gmail.com or
+  lucasnobre37@outlook.com
+</p>
