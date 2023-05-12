@@ -38,6 +38,7 @@
 <p>
 After clonning this repository, you'll need to run "npm install" on the root directory of this application, so all dependencies can be installed properlly.
 </p>
+<p>Also, client_id and client_secret has been removed from the application. You'll to replace the empty strings with the right id and secret to request authentication successfully.</p>
 <p>
   Run "npm start" to start running the server locally. The default port is 8080.
 </p>
