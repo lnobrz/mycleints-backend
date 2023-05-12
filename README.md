@@ -36,6 +36,9 @@
 <h2>Usage</h2>
 <h3>Starting Server Locally</h3>
 <p>
+After clonning this repository, you'll need to run "npm install" on the root directory of this application, so all dependencies can be installed properlly.
+</p>
+<p>
   Run "npm start" to start running the server locally. The default port is 8080.
 </p>
 <h3>Making Requests</h3>
