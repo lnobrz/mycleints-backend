@@ -39,7 +39,7 @@ exports.getToken = async (req: Request, res: Response, next: NextFunction) => {
         `https://myclients-app.vercel.app/auth?accessToken=${data.access_token}&locationId=${data.locationId}&refreshToken=${data.refresh_token}`
       );
   } catch (error) {
-    res.status(300).redirect(`https://myclients-app.vercel.appauth?error=${error}`);
+    res.status(300).redirect(`https://myclients-app.vercel.app/auth?error=${error}`);
   }
 };
 
