@@ -1,10 +1,14 @@
 import { Request, Response, NextFunction } from "express";
+require('dotenv').config()
+
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
 
 exports.requestToken = (req: Request, res: Response, next: NextFunction) => {
   res
     .status(300)
     .redirect(
-      "https://marketplace.gohighlevel.com/oauth/chooselocation?response_type=code&redirect_uri=http://localhost:8080/get-token&client_id=client_id&scope=users.readonly"
+      `https://marketplace.gohighlevel.com/oauth/chooselocation?response_type=code&redirect_uri=http://localhost:8080/get-token&client_id=${clientId}&scope=users.readonly`
     );
 };
 
@@ -19,8 +23,8 @@ exports.getToken = async (req: Request, res: Response, next: NextFunction) => {
       Accept: "application/json",
     },
     body: new URLSearchParams({
-      client_id: "",
-      client_secret: "",
+      client_id: `${clientId}`,
+      client_secret: `${clientSecret}`,
       grant_type: "authorization_code",
       code: `${code}`,
     }),
@@ -32,10 +36,10 @@ exports.getToken = async (req: Request, res: Response, next: NextFunction) => {
     res
       .status(300)
       .redirect(
-        `http://localhost:5173/auth?accessToken=${data.access_token}&locationId=${data.locationId}&refreshToken=${data.refresh_token}`
+        `https://myclients-app.vercel.app/auth?accessToken=${data.access_token}&locationId=${data.locationId}&refreshToken=${data.refresh_token}`
       );
   } catch (error) {
-    res.status(300).redirect(`http://localhost:5173/auth?error=${error}`);
+    res.status(300).redirect(`https://myclients-app.vercel.appauth?error=${error}`);
   }
 };
 
@@ -53,8 +57,8 @@ exports.refreshToken = async (
       Accept: "application/json",
     },
     body: new URLSearchParams({
-      client_id: "",
-      client_secret: "",
+      client_id: `${clientId}`,
+      client_secret: `${clientSecret}`,
       grant_type: "refresh_token",
       refresh_token: `${refreshToken}`,
     }),
