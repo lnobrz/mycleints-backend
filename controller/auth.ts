@@ -8,7 +8,7 @@ exports.requestToken = (req: Request, res: Response, next: NextFunction) => {
   res
     .status(300)
     .redirect(
-      `https://marketplace.gohighlevel.com/oauth/chooselocation?response_type=code&redirect_uri=https://myclients-server.onrender.com&client_id=${clientId}&scope=users.readonly`
+      `https://marketplace.gohighlevel.com/oauth/chooselocation?response_type=code&redirect_uri=https://myclients-server.onrender.com/get-token&client_id=${clientId}&scope=users.readonly`
     );
 };
 
