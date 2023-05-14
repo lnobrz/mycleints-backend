@@ -37,10 +37,10 @@
         On controller/auth.ts:
         <ul>
             <li>
-                On requestToken controller, change the redirect uri to "localhost:8080/get-token", so the get token request can be made locally
+                On requestToken controller, change the redirect uri to "http://localhost:8080/...", so the get token request can be made locally
             </li>
             <li>
-                On getToken controller, change the redirect uri to "localhost:5173", so your client side application can receive and store the authentication credentials
+                On getToken controller, change the redirect uri to "http://localhost:5173/...", so your client side application can receive and store the authentication credentials
             </li>
         </ul>
     </p>
@@ -95,8 +95,3 @@
     
   </section>
 </main>
-
-
-
-
-
