@@ -12,7 +12,7 @@
     NodeJS 18^. Check NodeJs full documentation <a href="https://nodejs.org/en">here</a>.
   </li>
   <li>
-    Valid My Clients account, otherwise, requests will return 401 error. You can create an account <a href="https://www.gomyclients.com/">here</a>
+    Valid My Clients account, otherwise, requests will return 401 error. You can create an account <a href="https://www.gomyclients.com/">here</a>.
   </li>
   <li>
     My Clients App, which is the frontend part of this project. Full documentation
