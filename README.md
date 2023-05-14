@@ -1,32 +1,55 @@
-<h1>My Clients Server</h1>
-<h2>What it is?</h2>
-<p>
-  Welcome to My Clients Server application. This backend was made with the
-  purpose of handling user authentication in My Clients website. It handles
-  the request, retrieve and refresh of an access token that is used for making
-  requests on My Clients API.
-</p>
-<h2>Requirements</h2>
-<ul>
-  <li>
-    NodeJS 18^. Check NodeJs full documentation <a href="https://nodejs.org/en">here</a>.
-  </li>
-  <li>
-    Valid My Clients account, otherwise, requests will return 401 error. You can create an account <a href="https://www.gomyclients.com/">here</a>.
-  </li>
-  <li>
-    My Clients App, which is the frontend part of this project. Full documentation
-    <a href="https://github.com/lnobrz/myclients-frontend">here</a>.
-  </li>
-</ul>
-<h2>Usage</h2>
-<h3>Starting Server Locally</h3>
-<p>
-After cloning this repository, you'll need to run "npm install" on the root directory of this application, so all dependencies can be installed properlly.
-<p>
-  Run "npm start" to start running the server locally. The default port is 8080.
-</p>
-<h3>Making Requests</h3>
+<main>
+  <h1>My Clients Server</h1>
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      My Clients Server is a backend designed to handle an user authentication
+      to My Clients account process. It requests, retrieves and refresh
+      authentication credentials.
+    </p>
+  </section>
+  <section>
+    <h2>Requirements</h2>
+    <ul>
+      <li>
+        NodeJS 18^. Check NodeJs full documentation
+        <a href="https://nodejs.org/en">here</a>.
+      </li>
+      <li>
+        Valid My Clients account, otherwise, requests will return 401 error. You can
+        create an account <a href="https://www.gomyclients.com/">here</a>.
+      </li>
+      <li>
+        My Clients App, which is the frontend part of this project. Full
+        documentation
+        <a href="https://github.com/lnobrz/myclients-frontend">here</a>.
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h2>Usage</h2>
+    <h3>Starting Server Locally</h3>
+    <p>
+      After cloning this repository, you'll need to run "npm install" on the root
+      directory of this application, so all dependencies can be installed properly.
+    </p>
+    <p>
+        On controller/auth.ts:
+        <ul>
+            <li>
+                On requestToken controller, change the redirect uri to "localhost:8080/get-token", so the get token request can be made locally
+            </li>
+            <li>
+                On getToken controller, change the redirect uri to "localhost:5173", so your client side application can receive and store the authentication credentials
+            </li>
+        </ul>
+    </p>
+    <p>
+        Finally, run "npm start" to start running the server locally. Your server should be up and running.
+      </p>
+  </section>
+  <section>
+    <h3>Making Requests</h3>
 <p>This server supports three different routes:</p>
 <ul>
   <li>
@@ -52,16 +75,28 @@ After cloning this repository, you'll need to run "npm install" on the root dire
     </p>
   </li>
 </ul>
-<h2>Stacks</h2>
+  </section>
+  <section>
+    <h2>Stacks</h2>
 <p>My Clients Server uses the following tech stacks:</p>
 <ul>
   <li>Typescript</li>
   <li>NodeJS</li>
   <li>Express</li>
 </ul>
-<h2>Contact Me</h2>
-<p>
-  Faced any problems? Don't hesitate to contact me on
-  <a href="mailto:lucasnobre037@gmail.com">lucasnobre037@gmail.com</a> or
-  <a href="mailto:lucasnobre37@outlook.com">lucasnobre37@outlook.com</a>.
-</p>
+  </section>
+  <section>
+    <h2>Contact Me</h2>
+    <p>
+      Faced any problems? Don't hesitate to contact me on
+      <a href="mailto:lucasnobre037@gmail.com">lucasnobre037@gmail.com</a> or
+      <a href="mailto:lucasnobre37@outlook.com">lucasnobre37@outlook.com</a>.
+    </p>
+    
+  </section>
+</main>
+
+
+
+
+
