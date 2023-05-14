@@ -9,36 +9,20 @@
 <h2>Requirements</h2>
 <ul>
   <li>
-    My Clients server was made with NodeJS 18.14.2, so you'll need NodeJS
-    installed on your machine to run the server locally. Check NodeJs full
-    documentation <a href="https://nodejs.org/en">here</a>.
+    NodeJS 18.^Check NodeJs full documentation <a href="https://nodejs.org/en">here</a>.
   </li>
   <li>
-    Futhermore, this application also uses Nodemon for updating the server
-    without needing to run the server over and over. You can install it globally
-    or locally: it's up to you. Check Nodemon full documentation
-    <a href="https://nodemon.io/">here</a>.<br />
-    If you don't want to use nodemon, you can simply edit the package.json file
-    in the root component: on line 7, replace the run script to "node index.ts"
-    and you'll be able to run the server.
+    Valid My Clients account, otherwise, requests will return 401 error. You can create an account <a href="https://www.gomyclients.com/">here</a>
   </li>
   <li>
-    Also, for the complete experience, you'll need to run My Clients Frontend
-    locally. Full documentation
+    My Clients App, which is the frontend part of this project. Full documentation
     <a href="https://github.com/lnobrz/myclients-frontend">here</a>.
-  </li>
-  <li>
-    Finally, this server was designed for only working with my account
-    credentials, so you'll need to have it, if you want to successfully make
-    requests.
   </li>
 </ul>
 <h2>Usage</h2>
 <h3>Starting Server Locally</h3>
 <p>
-After clonning this repository, you'll need to run "npm install" on the root directory of this application, so all dependencies can be installed properlly.
-</p>
-<p>Also, client_id and client_secret has been removed from the application. You'll need to replace the empty strings with the right id and secret to request authentication successfully.</p>
+After cloning this repository, you'll need to run "npm install" on the root directory of this application, so all dependencies can be installed properlly.
 <p>
   Run "npm start" to start running the server locally. The default port is 8080.
 </p>
