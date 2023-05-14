@@ -27,7 +27,7 @@ After cloning this repository, you'll need to run "npm install" on the root dire
   Run "npm start" to start running the server locally. The default port is 8080.
 </p>
 <h3>Making Requests</h3>
-<p>This server have support for three different routes:</p>
+<p>This server supports three different routes:</p>
 <ul>
   <li>
     <p>
@@ -36,15 +36,10 @@ After cloning this repository, you'll need to run "npm install" on the root dire
       After the login, server will redirect to "/get-token/" with the rights
       credentials to request an access token.
     </p>
-    <p>
-      NOTE: When logging in, select "TEST account": If you choose another
-      account, the response will not retrieve the locationId, which is
-      neccessary to make client-side GET requests to users API.
-    </p>
   </li>
   <li>
     <p>
-      "/get-token/": get the neccessary query parameters to request an access
+      "/get-token/": get the necessary query parameters to request an access
       token. When the access token is retrieved, server will redirect to client
       side with the credentials in the URI.
     </p>
@@ -58,7 +53,7 @@ After cloning this repository, you'll need to run "npm install" on the root dire
   </li>
 </ul>
 <h2>Stacks</h2>
-<p>My Clients Server uses the following stacks:</p>
+<p>My Clients Server uses the following tech stacks:</p>
 <ul>
   <li>Typescript</li>
   <li>NodeJS</li>
