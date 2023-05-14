@@ -9,7 +9,7 @@
 <h2>Requirements</h2>
 <ul>
   <li>
-    NodeJS 18.^Check NodeJs full documentation <a href="https://nodejs.org/en">here</a>.
+    NodeJS 18^. Check NodeJs full documentation <a href="https://nodejs.org/en">here</a>.
   </li>
   <li>
     Valid My Clients account, otherwise, requests will return 401 error. You can create an account <a href="https://www.gomyclients.com/">here</a>
