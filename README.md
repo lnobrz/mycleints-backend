@@ -2,7 +2,7 @@
 <h2>What it is?</h2>
 <p>
   Welcome to My Clients Server application. This backend was made with the
-  purpose of handling an user authentication in My Clients website. It handles
+  purpose of handling user authentication in My Clients website. It handles
   the request, retrieve and refresh of an access token that is used for making
   requests on My Clients API.
 </p>
